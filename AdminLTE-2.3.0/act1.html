@@ -24,13 +24,21 @@ scratch. This page gets rid of all links and provides the needed markup only.
     -->
     <link rel="stylesheet" href="dist/css/skins/skin-purple.min.css">
 
-
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	<script>
+	$(document).ready(function(){
+		$('#guide').on('change', function(){
+			$(".words").text("Don't Panic");
+			$(".numbers").text("42");
+		});
+	});
+	</script>
   </head>
   <!--
   BODY TAG OPTIONS:
@@ -59,20 +67,22 @@ scratch. This page gets rid of all links and provides the needed markup only.
       <header class="main-header">
 
         <!-- Logo -->
-        <a href="index2.html" class="logo">
+        <a href="#" class="logo">
           <!-- mini logo for sidebar mini 50x50 pixels -->
-          <span class="logo-mini"><img src="MD.png" style="width:50px;"></span>
+          <span class="logo-mini numbers"><img src="MD.png" style="width:50px;"></span>
           <!-- logo for regular state and mobile devices -->
-          <span class="logo-lg"><b>MastrDatr</b>
+          <span class="logo-lg words"><b>MastrDatr</b>
             <img src="MD.png" style="width:50px;"></span>
         </a>
 
         <!-- Header Navbar -->
         <nav class="navbar navbar-static-top" role="navigation">
           <!-- Sidebar toggle button-->
-          <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
-            <span class="sr-only">Toggle navigation</span>
+		  
+          <a href="#" class="sidebar-toggle words" data-toggle="offcanvas" role="button">
+            <span class="sr-only words">Toggle navigation</span>
           </a>
+		  
           <!-- Navbar Right Menu -->
           <div class="navbar-custom-menu">
             <ul class="nav navbar-nav">
@@ -209,7 +219,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
               </li>-->
               <!-- Control Sidebar Toggle Button -->
               <li>
-                <a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
+                <a href="#" data-toggle="control-sidebar" class="numbers"><i class="fa fa-gears"></i></a>
               </li>
             </ul>
           </div>
@@ -246,26 +256,19 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
           <!-- Sidebar Menu -->
           <ul class="sidebar-menu">
-            <li class="header">YOUR DATE</li>
+            <li class="header words">Date Checklist</li>
             <!-- Optionally, you can add icons to the links -->
-            <li class="active"><a href="#"><i class="fa fa-clock-o"></i> <span>Date Prep</span></a>
-              
-            </li> 
-
-
-
-
-
+            <li class="active"><a href="#" class="numbers"><i class="fa fa-clock-o"></i> <span class="words">Date Prep</span></a></li>
             <li class="treeview">
-              <a href="#"><i class="fa fa-film"></i> <span>Activity</span> <i class="fa fa-angle-left pull-right"></i></a>
+              <a href="#" class="numbers"><i class="fa fa-film"></i> <span class="words">Activity</span> <i class="fa fa-angle-left pull-right"></i></a>
               <ul class="treeview-menu">
-                <li><a href="#">Movies</a></li>
-                <li><a href="#">Physical</a></li>
-				<li><a href="#">Artistic</a></li>
+                <li><a href="#" class="words">Movies</a></li>
+                <li><a href="#" class="words">Physical</a></li>
+				<li><a href="#" class="words">Artistic</a></li>
               </ul>
             </li>
-			<li><a href="#"><i class="fa fa-cutlery"></i> <span>Eat</span></a></li>
-			<li><a href="#"><i class="fa fa-calculator"></i> <span>Calculate</span></a></li>
+			<li><a href="#" class="numbers"><i class="fa fa-cutlery words"></i> <span>Dinner</span></a></li>
+			<li><a href="#" class="numbers"><i class="fa fa-calculator words"></i> <span>Calculate</span></a></li>
           </ul><!-- /.sidebar-menu -->
         </section>
         <!-- /.sidebar -->
@@ -276,8 +279,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
         <!-- Content Header (Page header) -->
         <section class="content-header">
           <h1>
-            Page Header
-            <small>Optional description</small>
+            <b class="words">Page Header</b>
+            <small class="numbers">Optional description</small>
           </h1>
           
 
@@ -285,213 +288,74 @@ scratch. This page gets rid of all links and provides the needed markup only.
         <section class="content">
 
           <!-- Your Page Content Here -->
-			<div id="map" style="animation : none;
-    animation-delay : 0;
-    animation-direction : normal;
-    animation-duration : 0;
-    animation-fill-mode : none;
-    animation-iteration-count : 1;
-    animation-name : none;
-    animation-play-state : running;
-    animation-timing-function : ease;
-    backface-visibility : visible;
-    background : 0;
-    background-attachment : scroll;
-    background-clip : border-box;
-    background-color : transparent;
-    background-image : none;
-    background-origin : padding-box;
-    background-position : 0 0;
-    background-position-x : 0;
-    background-position-y : 0;
-    background-repeat : repeat;
-    background-size : auto auto;
-    border : 0;
-    border-style : none;
-    border-width : medium;
-    border-color : inherit;
-    border-bottom : 0;
-    border-bottom-color : inherit;
-    border-bottom-left-radius : 0;
-    border-bottom-right-radius : 0;
-    border-bottom-style : none;
-    border-bottom-width : medium;
-    border-collapse : separate;
-    border-image : none;
-    border-left : 0;
-    border-left-color : inherit;
-    border-left-style : none;
-    border-left-width : medium;
-    border-radius : 0;
-    border-right : 0;
-    border-right-color : inherit;
-    border-right-style : none;
-    border-right-width : medium;
-    border-spacing : 0;
-    border-top : 0;
-    border-top-color : inherit;
-    border-top-left-radius : 0;
-    border-top-right-radius : 0;
-    border-top-style : none;
-    border-top-width : medium;
-    bottom : auto;
-    box-shadow : none;
-    box-sizing : content-box;
-    caption-side : top;
-    clear : none;
-    clip : auto;
-    color : inherit;
-    columns : auto;
-    column-count : auto;
-    column-fill : balance;
-    column-gap : normal;
-    column-rule : medium none currentColor;
-    column-rule-color : currentColor;
-    column-rule-style : none;
-    column-rule-width : none;
-    column-span : 1;
-    column-width : auto;
-    content : normal;
-    counter-increment : none;
-    counter-reset : none;
-    cursor : auto;
-    direction : ltr;
-    display : inline;
-    empty-cells : show;
-    float : none;
-    font : normal;
-    font-family : inherit;
-    font-size : medium;
-    font-style : normal;
-    font-variant : normal;
-    font-weight : normal;
-    height : auto;
-    hyphens : none;
-    left : auto;
-    letter-spacing : normal;
-    line-height : normal;
-    list-style : none;
-    list-style-image : none;
-    list-style-position : outside;
-    list-style-type : disc;
-    margin : 0;
-    margin-bottom : 0;
-    margin-left : 0;
-    margin-right : 0;
-    margin-top : 0;
-    max-height : none;
-    max-width : none;
-    min-height : 0;
-    min-width : 0;
-    opacity : 1;
-    orphans : 0;
-    outline : 0;
-    outline-color : invert;
-    outline-style : none;
-    outline-width : medium;
-    overflow : visible;
-    overflow-x : visible;
-    overflow-y : visible;
-    padding : 0;
-    padding-bottom : 0;
-    padding-left : 0;
-    padding-right : 0;
-    padding-top : 0;
-    page-break-after : auto;
-    page-break-before : auto;
-    page-break-inside : auto;
-    perspective : none;
-    perspective-origin : 50% 50%;
-    position : static;
-    /* May need to alter quotes for different locales (e.g fr) */
-    quotes : '\201C' '\201D' '\2018' '\2019';
-    right : auto;
-    tab-size : 8;
-    table-layout : auto;
-    text-align : inherit;
-    text-align-last : auto;
-    text-decoration : none;
-    text-decoration-color : inherit;
-    text-decoration-line : none;
-    text-decoration-style : solid;
-    text-indent : 0;
-    text-shadow : none;
-    text-transform : none;
-    top : auto;
-    transform : none;
-    transform-style : flat;
-    transition : none;
-    transition-delay : 0s;
-    transition-duration : 0s;
-    transition-property : none;
-    transition-timing-function : ease;
-    unicode-bidi : normal;
-    vertical-align : baseline;
-    visibility : visible;
-    white-space : normal;
-    widows : 0;
-    width : auto;
-    word-spacing : normal;
-    z-index : auto;"></div>
-    <script>
-      function initMap() {
-        var mapDiv = document.getElementById('map');
-        var map = new google.maps.Map(mapDiv, {
-          center: {lat: 44.540, lng: -78.546},
-          zoom: 8
-        });
-      }
-    </script>
-    <script src="https://maps.googleapis.com/maps/api/js?callback=initMap"
-        async defer></script>
-        </section>
+			<div class="col-xs-8 numbers">
+			<script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script><div class=id="mapPrep"><div style='overflow:hidden;height:440px;width:700px;'><div id='gmap_canvas' style='height:440px;width:700px;'></div><div><small><a href="http://embedgooglemaps.com">									embed google map							</a></small></div><div><small><a href="http://googlemapsgenerator.com">google maps html code</a></small></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div><script type='text/javascript'>function init_map(){var myOptions = {zoom:10,center:new google.maps.LatLng(41.5049547,-81.6091376),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(41.5049547,-81.6091376)});infowindow = new google.maps.InfoWindow({content:'<strong>Case Western Reserve</strong><br>10900 Euclid Ave, Cleveland, OH 44106<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script></div>
+			
+			</div>
+			<div class="col-xs-4">
+				<form>
+					<input type="radio" value="male" onchange="init_map2()"><span class="words">Circle Convenience</span><br><br>
+					<script>
+						function init_map2(){var myOptions = {zoom:17,center:new google.maps.LatLng(41.508754,-81.60609899999997),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(41.508754,-81.60609899999997)});infowindow = new google.maps.InfoWindow({content:'<strong>Circle Convenience </strong><br>11313 Euclid Ave, Cleveland, OH 44106<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map)
+					</script>
+					<input type="radio" name="gender" value="female" onchange="init_map3()"><span class="words">Constantino's Market</span><br><br>
+					<script>
+						function init_map3(){var myOptions = {zoom:17,center:new google.maps.LatLng(41.5103134,-81.60394789999998),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(41.5103134,-81.60394789999998)});infowindow = new google.maps.InfoWindow({content:'<strong>Constantino\'s Market</strong><br>11473 Euclid Ave, Cleveland, OH 44106<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);
+					</script>
+					<input type="radio" name="gender" value="other" onchange="init_map4()"><span class="words">Spuzzillo's Market</span><br><br>
+					<script>function init_map4(){var myOptions = {zoom:17,center:new google.maps.LatLng(41.5088788,-81.59763629999998),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(41.5088788,-81.59763629999998)});infowindow = new google.maps.InfoWindow({content:'<strong>Spuzzillo\'s Market</strong><br>12209 Mayfield Rd, Cleveland, OH 44106<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+				</form>
+			</div>
+		</section>
         </section><!-- /.content -->
       </div><!-- /.content-wrapper -->
-
+		
       <!-- Main Footer -->
       <footer class="main-footer">
         <!-- To the right -->
-        <div class="pull-right hidden-xs">
-          Save the Date
+        <div class="pull-right hidden-xs numbers">
+          <small>Scott Crawford, Brian Luebbert-Hill, Stephen Cha, Sam Yu</small>
         </div>
+		<div class="words">
         <!-- Default to the left -->
         <strong>Copyright &copy; 2016 <a href="#">MastrDatr.com</a>.</strong> All rights reserved.
+		</div>
       </footer>
 
       <!-- Control Sidebar -->
       <aside class="control-sidebar control-sidebar-dark">
         <!-- Create the tabs -->
         <ul class="nav nav-tabs nav-justified control-sidebar-tabs">
-          <li class="active"><a href="#control-sidebar-home-tab" data-toggle="tab"><i class="fa fa-home"></i></a></li>
-          <li><a href="#control-sidebar-settings-tab" data-toggle="tab"><i class="fa fa-gears"></i></a></li>
+          <li class="active numbers"><a href="#control-sidebar-home-tab" data-toggle="tab"><i class="fa fa-home"></i></a></li>
+          <li class="numbers"><a href="#control-sidebar-settings-tab" data-toggle="tab"><i class="fa fa-gears"></i></a></li>
         </ul>
         <!-- Tab panes -->
         <div class="tab-content">
           <!-- Home tab content -->
           <div class="tab-pane active" id="control-sidebar-home-tab">
-            <h3 class="control-sidebar-heading">Recent Activity</h3>
+            <h3 class="control-sidebar-heading words">Recent Activity</h3>
             <ul class="control-sidebar-menu">
               <li>
-                <a href="javascript::;">
+                <a href="javascript::;" class="numbers">
                   <i class="menu-icon fa fa-birthday-cake bg-red"></i>
-                  <div class="menu-info">
-                    <h4 class="control-sidebar-subheading">Langdon's Birthday</h4>
-                    <p>Will be 23 on April 24th</p>
+                  <div class="menu-info words">
+                    <h4 class="control-sidebar-subheading words">Langdon's Birthday</h4>
+                    <p class="numbers">Will be 23 on April 24th</p>
                   </div>
                 </a>
               </li>
             </ul><!-- /.control-sidebar-menu -->
 
-            <h3 class="control-sidebar-heading">Tasks Progress</h3>
+            <h3 class="control-sidebar-heading words">Tasks Progress</h3>
             <ul class="control-sidebar-menu">
               <li>
                 <a href="javascript::;">
-                  <h4 class="control-sidebar-subheading">
+                  <h4 class="control-sidebar-subheading numbers">
                     Custom Template Design
-                    <span class="label label-danger pull-right">70%</span>
+                    <span class="label label-danger pull-right words">70%</span>
                   </h4>
                   <div class="progress progress-xxs">
-                    <div class="progress-bar progress-bar-danger" style="width: 70%"></div>
+                    <div class="progress-bar progress-bar-danger words" style="width: 70%"></div>
                   </div>
                 </a>
               </li>
@@ -503,14 +367,14 @@ scratch. This page gets rid of all links and provides the needed markup only.
           <!-- Settings tab content -->
           <div class="tab-pane" id="control-sidebar-settings-tab">
             <form method="post">
-              <h3 class="control-sidebar-heading">General Settings</h3>
+              <h3 class="control-sidebar-heading words">General Settings</h3>
               <div class="form-group">
-                <label class="control-sidebar-subheading">
-                  Report panel usage
-                  <input type="checkbox" class="pull-right" checked>
+                <label class="control-sidebar-subheading words">
+                  Hitchhiker's Guide to the Galaxy Mode
+                  <input id="guide" type="checkbox" class="pull-right">
                 </label>
-                <p>
-                  Some information about this general settings option
+                <p class="numbers">
+                  There's no turning back. Bring a towel.
                 </p>
               </div><!-- /.form-group -->
             </form>
