@@ -286,26 +286,32 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
         <!-- Main content -->
         <section class="content">
-
-          <!-- Your Page Content Here -->
-			<div class="col-xs-8 numbers">
-			<script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script><div class=id="mapPrep"><div style='overflow:hidden;height:440px;width:700px;'><div id='gmap_canvas' style='height:440px;width:700px;'></div><div><small><a href="http://embedgooglemaps.com">									embed google map							</a></small></div><div><small><a href="http://googlemapsgenerator.com">google maps html code</a></small></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div><script type='text/javascript'>function init_map(){var myOptions = {zoom:10,center:new google.maps.LatLng(41.5049547,-81.6091376),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(41.5049547,-81.6091376)});infowindow = new google.maps.InfoWindow({content:'<strong>Case Western Reserve</strong><br>10900 Euclid Ave, Cleveland, OH 44106<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script></div>
+		<h1 class="words">Cost</h1>
+		
+			<h2 class="words">Flowers from Circle Convenience</h2>
+			<h3 class="numbers">&nbsp;&nbsp;&nbsp;&nbsp; . . . $6.99</h3>
+			<h2 class="words">Movie at Cedar Lee Theatre</h2>
+			<h3 class="numbers">&nbsp;&nbsp;&nbsp;&nbsp; . . . $10.99</h3>
+			<h2 class="words">Dinner at The Jolly Scholar</h2>
+			<h3 class="numbers">&nbsp;&nbsp;&nbsp;&nbsp;. . . $15.49</h3>
+			<h3 class="words">-------------------------------------</h3>
+			<h2 class="numbers">Total . . . $33.49</h2>
+			<br>
+			<br>
+			<br>
+		<h1 class="words">Directions</h1>
+		<br>
+		<span class="numbers">
+			<iframe class="numbers" width="600" height="450" frameborder="0" style="border:0"
+src="https://www.google.com/maps/embed/v1/directions?origin=place_id:ChIJLRJYNon7MIgRkQuwe-BpkHE&destination=place_id:ChIJvzPkhon7MIgReEGiZzZUztM&key=AIzaSyB0lnF-UCONY2IrwCLtHafBTLW4BKrVMwc" allowfullscreen></iframe>
+</span><br><span class="numbers">
+<iframe class="numbers" width="600" height="450" frameborder="0" style="border:0"
+src="https://www.google.com/maps/embed/v1/directions?origin=place_id:ChIJvzPkhon7MIgReEGiZzZUztM&destination=place_id:ChIJqVLP_1H8MIgRkwJucI92viI&key=AIzaSyB0lnF-UCONY2IrwCLtHafBTLW4BKrVMwc" allowfullscreen></iframe>
+</span><br><span class="numbers">        
+		<iframe class="numbers" width="600" height="450" frameborder="0" style="border:0"
+src="https://www.google.com/maps/embed/v1/directions?origin=place_id:ChIJqVLP_1H8MIgRkwJucI92viI&destination=place_id:ChIJNwaBOon7MIgRwyDK9r7VCnE&key=AIzaSyB0lnF-UCONY2IrwCLtHafBTLW4BKrVMwc" allowfullscreen></iframe>
+</span>		  <!-- Your Page Content Here -->
 			
-			</div>
-			<div class="col-xs-4">
-				<form>
-					<input type="radio" name="gender" value="male" onchange="init_map2()"><span class="words">Circle Convenience</span><br><br>
-					<script>
-						function init_map2(){var myOptions = {zoom:17,center:new google.maps.LatLng(41.508754,-81.60609899999997),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(41.508754,-81.60609899999997)});infowindow = new google.maps.InfoWindow({content:'<strong>Circle Convenience </strong><br>11313 Euclid Ave, Cleveland, OH 44106<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);
-					</script>
-					<input type="radio" name="gender" value="female" onchange="init_map3()"><span class="words">Constantino's Market</span><br><br>
-					<script>
-						function init_map3(){var myOptions = {zoom:17,center:new google.maps.LatLng(41.5103134,-81.60394789999998),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(41.5103134,-81.60394789999998)});infowindow = new google.maps.InfoWindow({content:'<strong>Constantino\'s Market</strong><br>11473 Euclid Ave, Cleveland, OH 44106<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);
-					</script>
-					<input type="radio" name="gender" value="other" onchange="init_map4()"><span class="words">Spuzzillo's Market</span><br><br>
-					<script>function init_map4(){var myOptions = {zoom:17,center:new google.maps.LatLng(41.5088788,-81.59763629999998),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(41.5088788,-81.59763629999998)});infowindow = new google.maps.InfoWindow({content:'<strong>Spuzzillo\'s Market</strong><br>12209 Mayfield Rd, Cleveland, OH 44106<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
-				</form>
-			</div>
 		</section>
         </section><!-- /.content -->
       </div><!-- /.content-wrapper -->
