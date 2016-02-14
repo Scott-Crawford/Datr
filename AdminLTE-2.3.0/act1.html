@@ -279,8 +279,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
         <!-- Content Header (Page header) -->
         <section class="content-header">
           <h1>
-            <b class="words">Page Header</b>
-            <small class="numbers">Optional description</small>
+            <b class="words">Date Prep</b>
+            <small class="numbers">Buy some flowers, chocolate, or a card</small>
           </h1>
           
 
@@ -294,9 +294,9 @@ scratch. This page gets rid of all links and provides the needed markup only.
 			</div>
 			<div class="col-xs-4">
 				<form>
-					<input type="radio" value="male" onchange="init_map2()"><span class="words">Circle Convenience</span><br><br>
+					<input type="radio" name="gender" value="male" onchange="init_map2()"><span class="words">Circle Convenience</span><br><br>
 					<script>
-						function init_map2(){var myOptions = {zoom:17,center:new google.maps.LatLng(41.508754,-81.60609899999997),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(41.508754,-81.60609899999997)});infowindow = new google.maps.InfoWindow({content:'<strong>Circle Convenience </strong><br>11313 Euclid Ave, Cleveland, OH 44106<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map)
+						function init_map2(){var myOptions = {zoom:17,center:new google.maps.LatLng(41.508754,-81.60609899999997),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(41.508754,-81.60609899999997)});infowindow = new google.maps.InfoWindow({content:'<strong>Circle Convenience </strong><br>11313 Euclid Ave, Cleveland, OH 44106<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);
 					</script>
 					<input type="radio" name="gender" value="female" onchange="init_map3()"><span class="words">Constantino's Market</span><br><br>
 					<script>
@@ -333,21 +333,48 @@ scratch. This page gets rid of all links and provides the needed markup only.
         <div class="tab-content">
           <!-- Home tab content -->
           <div class="tab-pane active" id="control-sidebar-home-tab">
-            <h3 class="control-sidebar-heading words">Recent Activity</h3>
+            <h3 class="control-sidebar-heading words">Team Members</h3>
             <ul class="control-sidebar-menu">
               <li>
                 <a href="javascript::;" class="numbers">
-                  <i class="menu-icon fa fa-birthday-cake bg-red"></i>
+                  <i class="menu-icon fa fa-file bg-red"></i>
                   <div class="menu-info words">
-                    <h4 class="control-sidebar-subheading words">Langdon's Birthday</h4>
-                    <p class="numbers">Will be 23 on April 24th</p>
+                    <h4 class="control-sidebar-subheading words">Scott Crawford</h4>
+                    <p class="numbers">Front-End Dev/Web App</p>
+                  </div>
+                </a>
+              </li>
+			  <li>
+                <a href="javascript::;" class="numbers">
+                  <i class="menu-icon fa fa-android bg-red"></i>
+                  <div class="menu-info words">
+                    <h4 class="control-sidebar-subheading words">Brian Luebbert-Hill</h4>
+                    <p class="numbers">Back-End Dev/Android App</p>
+                  </div>
+                </a>
+              </li>
+			  <li>
+                <a href="javascript::;" class="numbers">
+                  <i class="menu-icon fa fa-paint-brush bg-red"></i>
+                  <div class="menu-info words">
+                    <h4 class="control-sidebar-subheading words">Stephen Cha</h4>
+                    <p class="numbers">Design</p>
+                  </div>
+                </a>
+              </li>
+			  <li>
+                <a href="javascript::;" class="numbers">
+                  <i class="menu-icon fa fa-lightbulb-o bg-red"></i>
+                  <div class="menu-info words">
+                    <h4 class="control-sidebar-subheading words">Sam Yu</h4>
+                    <p class="numbers">Idea Guy</p>
                   </div>
                 </a>
               </li>
             </ul><!-- /.control-sidebar-menu -->
 
-            <h3 class="control-sidebar-heading words">Tasks Progress</h3>
-            <ul class="control-sidebar-menu">
+            <h3 class="control-sidebar-heading words">#Hail2Pitt</h3>
+            <!--<ul class="control-sidebar-menu">
               <li>
                 <a href="javascript::;">
                   <h4 class="control-sidebar-subheading numbers">
