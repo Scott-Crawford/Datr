@@ -77,8 +77,8 @@
 				<br>
 				<br>
 				<br>
-				<button class="button button-action button-pill button-giant" onclick="Reveal.next();" style="width:200px">Yes</button>
-				<button class="button button-caution button-pill button-giant" onclick="Reveal.next();" style="width:200px">No</button>
+				<button class="button button-action button-pill button-giant" onclick="DelayRedirect();" style="width:200px">Yes</button>
+				<button class="button button-caution button-pill button-giant" onclick="DelayRedirect();" style="width:200px">No</button>
 			</section>
 
 			<section data-background-transition="convex">
@@ -96,6 +96,18 @@
 		</div>	
 		
 	</div>
+	<script type="text/javascript">
+function DelayRedirect() {
+	Reveal.next();
+    var seconds = 5;
+    setInterval(function () {
+        seconds--;
+        if (seconds == 0) {
+            window.location = "\AdminLTE-2.3.0/starter.html";
+        }
+    }, 1000);
+}
+</script>
 	<script src="lib/js/head.min.js"></script>
 	<script src="js/reveal.js"></script>
 
